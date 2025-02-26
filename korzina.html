@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korzina</title>
+    <link rel="stylesheet" href="css/korzina.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img class="logo" src="images/logo.png" alt="">
+        </a>
+
+
+        <nav class="navbar burger-navbar">
+            <div class="burger-menu">
+                <i class="fa-solid fa-bars burger-img"></i>
+                <div class="burger-box">
+                    <a href="katalog.html">КАТАЛОГ</a>
+                    <a href="">ЖЕҢІЛДІКТЕР</a>
+                    <a href="">БІЗ ТУРАЛЫ</a>
+                </div>
+            </div>
+
+            <div class="nav-box">
+                <a href="katalog.html">КАТАЛОГ</a>
+                <a href="">ЖЕҢІЛДІКТЕР</a>
+                <a href="">БІЗ ТУРАЛЫ</a>
+            </div>    
+        </nav>
+
+        <div class="icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <a href="like.html" class="header-icons">
+                <i class="fa-solid fa-heart header-heart"></i>
+                <span id="likeCount" class="favorite-count">0</span>
+            </a>
+
+            <a href="korzina.html" class="header-icons">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cartCount" class="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="products">
+            <p class="texts"><span class="dostovka">Гүл жеткізу ></span>Тапсырысты рәсімдеу</p><hr>
+            <h2 class="izbr">Сeбет</h2>
+            <div class="subsection">
+                <div id="cart-items"></div>
+                <div class="overall-price">
+                    <h3>Сіздің тапсырысыңыз</h3>
+                    <p>Жалпы баға: <span id="total-price">0</span> ₸</p>
+                </div>
+            </div>
+            <p class="texts"><span class="dostovka">Гүл жеткізу ></span>Тапсырысты рәсімдеу</p><hr>
+        </section>
+    </main>
+
+
+
+    <script src="js/korzina.js"></script>
+</body>
+</html>

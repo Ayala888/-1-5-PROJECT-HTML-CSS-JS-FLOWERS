@@ -1,0 +1,355 @@
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,526;1,526&family=Playball&display=swap');
+
+:root{
+    --background-color: #ec9fce; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+header{
+    position: fixed;
+    background-color: var(--background-color);
+    padding: 0 150px;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 80px;
+}
+
+.header-icons {
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.header-icons i {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.favorite-count,
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: red;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: none; 
+}
+  
+
+.nav-box a{
+    color: black;
+    padding: 8px 16px;
+    font-size: 13px;
+}
+
+.nav-box a:hover{
+    color: white;
+}
+
+.fa-heart, .fa-cart-shopping, .fa-magnifying-glass {
+    font-size: 22px;
+    padding-left: 8px;
+}
+
+.icon{
+    width: 24px; 
+    height: 24px;
+}
+
+.icons a{
+    color: black;
+}
+
+
+.dostovka{
+    color: gray;
+    margin: 0 20px;
+}
+
+
+.products{
+    margin: 120px 180px;
+}
+
+
+.izbr{
+    margin: 60px 0;
+}
+
+.texts{
+    margin: 10px 0;
+}
+
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #ddd;;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.cart-item img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cart-item-content {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.subsection{
+    display: flex;
+    margin-bottom: 80px;
+
+}
+
+
+.cart-item-content div {
+    display: flex;
+    gap: 50px;
+}
+
+.flower-info{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cart-item-content h4 {
+    font-size: 20px;
+    font-weight: 600;  
+    font-family: 'EB Garamond', serif;
+}
+
+.cart-item-content p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+
+.quantity-btn {
+    background: #f2f2f2;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.quantity-btn:hover {
+    background: #ddd;
+}
+
+
+.total-item-price {
+    font-size: 15px;
+    color: #d9534f;
+}
+
+
+.remove-btn {
+    background: #d9534f;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.remove-btn:hover {
+    background: #c9302c;
+}
+
+.overall-price{
+    width: 300px;
+    height: 200px;
+    background-color: Gainsboro;
+    margin-left: 900px;
+    position: fixed;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.burger-menu{
+    display: none;
+}
+
+.burger-img{
+    width: 40px;
+}
+
+@media (max-width:1024px){
+    .nav-box{
+        display: none;
+    }
+
+    .burger-menu{
+        display: block;
+        position: relative;
+    }
+
+    .burger-box{
+        position: absolute;
+        padding: 10px;
+        border: 2px solid black;
+        top: 65px;
+        right: 10px;
+        display: none;
+        background-color: white;
+        width: 120px;
+        font-size: 20px;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+    }
+
+    .burger-menu:hover .burger-box{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    header{
+        width: 100%;
+        padding: 0 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    .burger-navbar{
+        display: block;
+        font-size: 20px;
+    }
+
+    .burger-menu{
+        display: block;
+        position: relative;
+    }
+
+    .header-icons {
+        margin-top: 10px;
+    }
+
+    .products {
+        margin: 80px 10px;
+    }
+
+    .izbr {
+        margin: 30px 0;
+    }
+
+    .texts {
+        margin: 5px 0;
+    }
+
+    .dostovka {
+        margin: 0 10px;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .cart-item img {
+        width: 100%;
+        height: auto;
+        max-width: 200px;
+    }
+
+    .cart-item-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cart-item-content div {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cart-item-content h4 {
+        font-size: 18px;
+    }
+
+    .cart-item-content p {
+        font-size: 12px;
+    }
+
+    .quantity-btn {
+        padding: 4px 8px;
+        font-size: 14px;
+    }
+
+    .remove-btn {
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
+    }
+
+    .subsection {
+        flex-direction: column;
+    }
+
+    .overall-price {
+        width: 100%;
+        margin-left: 0;
+        position: static;
+        margin-top: 20px;
+    }
+}
+
+
+
+
+
+
+

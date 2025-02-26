@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img class="logo" src="images/logo.png" alt="">
+        </a>
+
+
+        <nav class="navbar">
+            <div class="nav-box">
+                <a href="katalog.html">КАТАЛОГ</a>
+                <a href="#discounts" class="section-link">ЖЕҢІЛДІКТЕР</a>
+                <a href="#about-us" class="section-link">БІЗ ТУРАЛЫ</a>
+            </div>
+        </nav>
+
+        <div class="icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <a href="like.html" class="header-icons">
+                <i class="fa-solid fa-heart header-heart"></i>
+                <span id="likeCount" class="favorite-count">0</span>
+            </a>
+
+            <a href="korzina.html" class="header-icons">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cartCount" class="cart-count">0</span>
+            </a>
+        </div>
+        <div class="navbar burger-navbar">
+            <div class="burger-menu">
+                <i class="fa-solid fa-bars burger-img"></i>
+                <div class="burger-box">
+                    <a href="katalog.html">КАТАЛОГ</a>
+                    <a href="#discounts" class="section-link">ЖЕҢІЛДІКТЕР</a>
+                    <a href="#about-us" class="section-link">БІЗ ТУРАЛЫ</a>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section1">
+            <div class="content">
+                <h3>Астанада гүлдерді 24/7 жеткіземіз</h3>
+                <p>Сіз таңдаған премиум класты гүл шоғын 60 минут ішінде жеткіземіз!</p>
+                <a class="btn" href="https://api.whatsapp.com/send/?phone=77058885545&text=Здравствуйте.%0A%0A&type=phone_number&app_absent=0">Whatsapp</a>
+                <a href="https://www.instagram.com/chicflowers.kz?igsh=MWVkanp5bTgxaG41bQ==">
+                    <img class="icon" src="images/insta.png" alt="">
+                </a>
+                <a href="https://api.whatsapp.com/send/?phone=77058885545&text=Здравствуйте.%0A%0A&type=phone_number&app_absent=0">
+                    <img class="icon" src="images/ватсап.png" alt="">
+                </a>
+            </div>
+            <img class="gul" src="https://mos-445697.oml.ru/d/cvety3.jpg" alt="">
+        </section>
+
+        <section class="searchSection">
+            <input type="text" id="searchBar" placeholder="Өнім іздеу..." onchange="handleSearch()">
+            <button id="searchBtn">Іздеу</button>
+        </section>
+        
+
+        <section class="products">
+            <h1 class="heading">Танымал сатылымдар</h1>
+            <div class="card">
+                <div class="card-product">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="products" id="about-us">
+            <h1 class="heading">Біз туралы</h1>
+            <div class="container2">
+                <div class="video-container">
+                <video autoplay loop>
+                    <source src="video/video5233428138486160076.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="content1">
+                <h3>Chic Flowers</h3>
+                <p>Chic Flowers – бұл сәнді гүлдер мен сәндік өсімдіктерді ұсынатын дүкен. Біздің мақсатымыз – клиенттерге жаңа және сапалы гүлдер арқылы сұлулық пен қуаныш сыйлау, әрбір детальға назар аудара отырып, ерекше композициялар жасау.</p><br><br>
+                <p>Біздің кәсіби флористер командасы клиенттердің барлық тілектерін ескереді, сондықтан әр букет сіздің сезімдеріңізді білдіріп, сәттерді ұмытылмас етеді. Chic Flowers компаниясында біз гүлдер – сөзсіз сөйлейтін өнер деп сенеміз!</p>
+            </div>
+        </div>
+        </section>
+
+        <section class="products" id="discounts">
+            <h1 class="heading">Жеңілдіктер</h1>
+                <table>
+                    <tr>
+                      <th>#</th>
+                      <th>Жеңілдік</th>
+                      <th>Тапсырыс саны</th>
+                      <th>Жеңілдік пайызы</th>
+                    </tr>
+                
+                    <tr>
+                      <th>1</th>
+                      <td>Алғашқы тапсырыс</td>
+                      <td>1 тапсырыс</td>
+                      <td>5%</td>
+                    </tr>
+                
+                    <tr>
+                      <th>2</th>
+                      <td>Тұрақты клиент</td>
+                      <td>5 тапсырыс және одан көп</td>
+                      <td>10%</td>
+                    </tr>
+                
+                    <tr>
+                      <th>3</th>
+                      <td>VIP клиент</td>
+                      <td>10 тапсырыс және одан көп</td>
+                      <td>15%</td>
+                    </tr>  
+                </table>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Байланыс</h3>
+                <p>Адрес: Бухар Жырау 28 , Иманова 10а, ASTANA</p>
+                <p>Тәулік бойы 24/7</p>
+            </div>
+            <div class="footer-content">
+                <h3>Сілтемелер</h3>
+                <nav>
+                    <ul>
+                        <li><a href="katalog.html">КАТАЛОГ</a></li>
+                        <li><a href="#">ЖЕҢІЛДІКТЕР</a></li>
+                        <li><a href="">БІЗ ТУРАЛЫ</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-content">
+                <h3>Әлеуметтік желі</h3>
+                <a href="https://www.instagram.com/chicflowers.kz?igsh=MWVkanp5bTgxaG41bQ==">
+                        <img class="icon" src="images/insta.png" alt=""></a></li>
+                <a href="https://api.whatsapp.com/send/?phone=77058885545&text=Здравствуйте%21%0A%0AПишу+из+приложения+2ГИС.%0A%0A&type=phone_number&app_absent=0">
+                        <img class="icon" src="images/ватсап.png" alt=""></a>  
+            </div>
+        </div>
+    </footer> 
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+
+:root{
+    --background-color: #ec9fce; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+header{
+    position: fixed;
+    background-color: var(--background-color);
+    padding: 0 150px;
+    z-index: 1000;
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 80px;
+}
+
+.header-icons {
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.header-icons i {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.favorite-count,
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: red;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: none; /* Бастапқыда көрсетпейміз */
+}
+  
+
+.nav-box a{
+    color: black;
+    padding: 8px 16px;
+    font-size: 13px;
+}
+
+.nav-box a:hover{
+    color: white;
+}
+
+.fa-heart, .fa-cart-shopping, .fa-magnifying-glass {
+    font-size: 22px;
+    padding-left: 8px;
+}
+
+.icon{
+    width: 24px; 
+    height: 24px;
+}
+
+.icons a{
+    color: black;
+}
+
+.container{
+    width: 100%;
+    margin: 0 50px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1{
+    font-family: "Sofia";
+    font-size: 35px;
+    color: #473741;
+    margin-top: 0;
+}
+
+.categories{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.category{
+    position: relative;
+    width: 200px;
+    margin: 15px;
+    background-color: #f7f0eb;
+    border-radius: 5px;
+}
+
+.category img{
+    width: 120px;
+    height: 150px;
+    transition-duration: 0.3s;
+}
+
+.category:hover img{
+    transform: scale(1.1);
+}
+
+.category a{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    width: 80%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.category a:hover{
+    background-color: black;
+}
+
+.burger-menu{
+    display: none;
+}
+
+.burger-img{
+    width: 40px;
+}
+
+
+@media (max-width: 480px) {
+    header{
+        width: 100%;
+        padding: 0 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    .burger-navbar{
+        display: block;
+        font-size: 20px;
+    }
+
+    .burger-box{
+        position: absolute;
+        padding: 10px;
+        border: 2px solid black;
+        top: 65px;
+        right: 10px;
+        display: none;
+        background-color: white;
+        width: 120px;
+        font-size: 20px;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+    }
+
+    .burger-menu{
+        display: block;
+        position: relative;
+    }
+
+    .header-icons {
+        margin-top: 10px;
+    }
+    .nav-box{
+        display: none;
+    }
+
+    .burger-navbar{
+        display: block;
+        font-size: 20px;
+    }
+
+    .burger-menu{
+        display: block;
+        position: relative;
+    }
+
+    .burger-box{
+        position: absolute;
+        padding: 10px;
+        border: 2px solid black;
+        top: 65px;
+        right: 10px;
+        display: none;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .burger-menu:hover .burger-box{
+        display: flex;
+        flex-direction: column;
+    }
+    header {
+        padding: 0 10px; 
+    }
+
+    .container {
+        margin: 0 10px; 
+        padding-top: 60px; 
+    }
+
+    .categories {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+
+    .category {
+        width: 100%; 
+        margin: 10px 0; 
+    }
+
+    h1 {
+        font-size: 24px; 
+    }
+
+    .header-icons i {
+        font-size: 18px; 
+    }
+
+    .nav-box a {
+        font-size: 12px; 
+    }
+}
+
+
+@media(max-width: 768px) {
+    header {
+        padding: 0 20px; 
+    }
+
+    .container {
+        margin: 0 20px; 
+        padding-top: 80px; 
+    }
+
+    .categories {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .category {
+        width: 100%; 
+        margin: 15px; 
+    }
+
+    h1 {
+        font-size: 28px; 
+    }
+
+    .header-icons i {
+        font-size: 20px; 
+    }
+
+    .nav-box a {
+        font-size: 14px; 
+    }
+}
+
+

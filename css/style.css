@@ -1,0 +1,556 @@
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,526;1,526&family=Playball&display=swap');
+
+:root{
+    --background-color: #ec9fce; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+header{
+    position: fixed;
+    background-color: var(--background-color);
+    padding: 0 150px;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burger-navbar{
+    display: none;
+}
+
+.logo{
+    width: 80px;
+}
+
+.header-icons {
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.header-icons i {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.favorite-count,
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: red;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: none; 
+}
+  
+
+.nav-box a{
+    color: black;
+    padding: 8px 16px;
+    font-size: 13px;
+}
+
+.nav-box a:hover{
+    color: white;
+}
+
+.fa-heart, .fa-cart-shopping, .fa-magnifying-glass {
+    font-size: 22px;
+    padding-left: 8px;
+}
+
+.icon{
+    width: 24px; 
+    height: 24px;
+}
+
+.icons a{
+    color: black;
+}
+
+/* Section басталар жол */
+
+section .gul{
+    width: 100%;
+    height: 95vh;
+    position: relative;
+    padding-top: 50px;
+}
+
+.section1{
+    align-items: center;
+    min-height: 70vh;
+    background-position: center;
+}
+
+.section1 .content{
+    max-width: 400px;
+    position: absolute;
+    z-index: 999;
+    bottom: 300px;
+    top: 150px;
+    margin-left: 150px;
+}
+
+.content  h3{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.content p{
+    margin: 40px 0;
+    font-size: 18px;
+}
+
+.btn{
+    margin-top: 1rem;
+    border-radius: 50px;
+    background: green;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+}
+
+.btn:hover{
+    background-color: var(--background-color);
+}
+
+.searchSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px 0;
+}
+
+
+#searchBar {
+    width: 60%;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: 2px solid #ff4081;
+    border-radius: 30px 0 0 30px;
+    outline: none;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(255, 64, 129, 0.3);
+    transition: 0.3s;
+}
+
+#searchBtn {
+    padding: 13px 20px;
+    font-size: 18px;
+    border: none;
+    background: #ff4081;
+    color: white;
+    border-radius: 0 30px 30px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#searchBtn:hover {
+    background: #d81b60;
+}
+
+
+.products{
+    margin: 60px 120px;
+}
+
+.heading{
+    text-align: center;
+    font-size: 25px;
+    margin: 40px 0;
+    background-color: pink;
+    margin-top: 130px;
+    
+}
+
+.card-product{
+    text-align: center;
+    background: #f7f0eb;
+    position: relative;
+}
+
+.card-product img{
+    width: 300px;
+}
+
+.img2 {
+    width: 100%;
+}
+
+.card-product .fa-heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    color: white;
+}
+
+h4{
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+}
+
+.card{
+    width: 340px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.price{
+    font-size: 17px;
+}
+
+.old-price{
+    text-decoration: line-through;
+    color: grey;
+    font-size: 15px;
+}
+
+.button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.button.clicked {
+    background-color: #f44336; 
+}
+
+.container2{
+    display: flex;
+    gap: 80px;
+    margin:  40px 60px;
+}
+
+video{
+    height: 350px;
+    border-radius: 8px;
+}
+
+.content1 h3{
+    font-size: 40px;
+    font-family: 'Playball', serif;
+    margin-bottom: 30px;
+}
+
+.content1 p{
+    font-size: 20px;
+    line-height: 1.5;
+    color: #333;
+    width: 750px;
+    font-family: 'EB Garamond', serif;
+}
+
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    width: 700px;
+    text-align: center;
+    box-shadow: 0 0 30px #0000001a;
+    margin: 40px 250px;
+}
+
+
+th, td{
+    padding: 12px;
+    border: 2px solid black;
+}
+
+th{
+    background-color: var(--background-color);
+    color: #fff;
+}
+
+footer{
+    background-color: #f7f0eb;
+    color: black;
+    width: 100%;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content{
+   width: 33.3%;
+   text-align: center;
+}
+
+footer a{
+    display: flex;
+    justify-content: center;
+    color: black;
+    margin: 10px;
+    font-size: 15px;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+footer h3{
+    font-size: 20px;
+    margin: 16px;
+}
+
+footer p{
+    width: 200px;
+    margin: auto;
+    padding: 7px;
+    font-size: 15px;
+}
+
+.burger-menu{
+    display: none;
+}
+
+.burger-img{
+    width: 40px;
+}
+
+@media (max-width:1024px){
+    .nav-box{
+        display: none;
+    }
+
+    .burger-navbar{
+        display: block;
+        font-size: 20px;
+    }
+
+    .burger-menu{
+        display: block;
+        position: relative;
+    }
+
+    .burger-box{
+        position: absolute;
+        padding: 10px;
+        border: 2px solid black;
+        top: 65px;
+        right: 10px;
+        display: none;
+        background-color: white;
+        width: 120px;
+        font-size: 20px;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+    }
+
+    .burger-menu:hover .burger-box{
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+@media (max-width:768px){
+    header{
+        width: 768px;  
+    }
+
+    .heading{
+        text-align: center;
+    }
+
+    .card{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-product img{
+        width: 250px;
+    }
+
+    .container2{
+        display: block;
+        margin:  40px 60px;
+    }
+
+    video{
+        height: 300px;
+        margin-bottom: 30px;
+    }
+
+    h3{
+        font-size: 20px;
+        color: #333;
+    }
+    
+    .content1 p{
+        font-size: 15px;
+        line-height: 1.5;
+        color: #333;
+        width: 500px;
+    }
+
+    .gul{
+        width: 100%
+    }
+
+    table{
+        border: 2px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+        width: 500px;
+        text-align: center;
+        box-shadow: 0 0 30px #0000001a;
+        margin: 40px 0px;
+    }
+
+    footer{
+        width: 768px;
+    }
+}
+
+@media (max-width: 480px) {
+    header{
+        width: 100%;
+        padding: 0 80px;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+
+    .burger-menu{
+        display: block;
+        position: relative;
+    }
+
+    .header-icons {
+        margin-top: 10px;
+    }
+
+    section .gul {
+        padding: 0;
+        height: 70vh;
+        width: 480px;
+        object-fit: cover;
+    }
+
+
+    .section1 .content {
+        margin-left: 20px;
+        top: 100px;
+    }
+
+    .content h3 {
+        font-size: 24px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+
+    #searchBar {
+        width: 65%;
+        font-size: 14px;
+
+    }
+
+    #searchBtn {
+        width: 20%;
+        font-size: 14px;
+    }
+
+    .heading{
+        width: 400px;
+    }
+
+    .products {
+        margin: 40px;
+    }
+
+    .card {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+    }
+
+    .card-product img {
+        width: 100%;
+    }
+
+    .container2 {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    video {
+        width: 100%;
+        height: auto;
+    }
+
+    .content1 p {
+        width: 100%;
+    }
+
+    table {
+        width: 80px;
+        font-size: 13px;
+    }
+
+    footer {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .footer-content {
+        width: 100%;
+    }
+
+    .footer-content h3 {
+        font-size: 15px;
+    }
+
+    .footer-content p {
+        width: 100%;
+    }
+}
+
+

@@ -1,0 +1,63 @@
+{
+  "flowers": [
+    {
+      "id": "1",
+      "name": "Гортензия гүлшоғы",
+      "price": "20 400₸",
+      "oldPrice": "23900₸",
+      "image": "https://pro-buket.kz/wp-content/uploads/2024/07/frame-1849-360x480.webp?ver=2"
+    },
+    {
+      "id": "2",
+      "name": "Emily гүлшоғы",
+      "price": "65 900₸",
+      "oldPrice": "70000₸",
+      "image": "https://pro-buket.kz/wp-content/uploads/2024/08/2045471918-360x480.webp?ver=2"
+    },
+    {
+      "id": "3",
+      "name": "Enchanted гүлшоғы",
+      "price": "115 100₸",
+      "oldPrice": "118900₸",
+      "image": "https://pro-buket.kz/wp-content/uploads/2024/09/l-3-360x480.webp?ver=2"
+    },
+    {
+      "id": "4",
+      "name": "101 раушан",
+      "price": "107 900₸",
+      "oldPrice": "110000₸",
+      "image": "https://pro-buket.kz/wp-content/uploads/2024/08/101-roza-pink-expression-360x480.webp?ver=2"
+    },
+    {
+      "id": "5",
+      "name": "Композиция Поэзия Грасса",
+      "price": "49 800₸",
+      "oldPrice": "55000₸",
+      "image": "https://pro-buket.kz/wp-content/uploads/2022/02/XS0ZL9_sMXk-1-min-360x480.webp?ver=2"
+    },
+    {
+      "id": "6",
+      "name": "Гипсофила гүлшоғы",
+      "price": "14 400₸",
+      "oldPrice": "18000₸",
+      "image": "https://pro-buket.kz/wp-content/uploads/2022/09/123578-360x480.webp?ver=2"
+    },
+    {
+      "id": "7",
+      "name": "101 пион",
+      "price": "460 200₸",
+      "oldPrice": "465900₸",
+      "image": "https://pro-buket.kz/wp-content/uploads/2024/06/frame-1721-360x480.webp?ver=2"
+    },
+    {
+      "id": "8",
+      "name": "101 Гипсофила",
+      "price": "23 200₸",
+      "oldPrice": "25000₸",
+      "image": "https://pro-buket.kz/wp-content/uploads/2022/02/FF_luorLsKQ-1-min-360x480.webp?ver=2"
+    }
+  ]
+}
+
+
+  
