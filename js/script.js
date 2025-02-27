@@ -15,7 +15,14 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
 
         document.getElementById("searchBtn").addEventListener("click", () => handleSearch(data.flowers));
-        document.getElementById("searchBar").addEventListener("input", () => handleSearch(data.flowers));
+
+        document.getElementById("searchBar").addEventListener("keydown", (event) => {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                handleSearch(data.flowers);
+            }
+        });
+        
 
         document.querySelector(".fa-magnifying-glass").addEventListener("click", () => {
             const searchBar = document.getElementById("searchBar");
